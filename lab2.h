@@ -11,9 +11,9 @@ class Funcionario{
 	private:
 		string nome_funcionario;
 		float salario;
-		int dia_data_admissao; 
-		int mes_data_admissao; 
-		int ano_data_admissao; 
+		//int dia_data_admissao; 
+		//int mes_data_admissao; 
+		//int ano_data_admissao; 
 
 
 	public:
@@ -25,15 +25,18 @@ class Funcionario{
 		float getSalario();
 		void setSalario(float sal);
 
-		int getDataAdm();
-		void setDataAdm(int d, int m, int a);
+		//int getDataAdm();
+		//void setDataAdm(int d, int m, int a);
 
 		void Entradadadosfuncionais();
 		void Saidadadosfuncionais();
 
+		friend std::ostream& operator<< (std::ostream &funcionario, Funcionario const func);
+
+};		
 
 
-};
+
 
 
 
@@ -55,6 +58,9 @@ class Empresa{
 		
 		string getListaFunc();
 		void setListaFunc(string lista_func);
+
+		void EntradadadosEmpresa();
+		void SaidadadosEmpresa();
 
 };
 

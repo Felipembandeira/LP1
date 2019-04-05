@@ -8,10 +8,45 @@ using namespace std;
 
 int main() {
 
-//Funcionario func;
+Funcionario func;
 Empresa emp;
+int num;
 
 
+
+
+    cout << "1-Para cadastrar Empresa" << endl;
+    cout << "2-Para cadastrar Funcionario" << endl;
+    cout << "3-Para Listar dados dos Funcionarios" << endl;
+    cout << "4-Para dar um aumento aos Funcionarios" << endl;
+    cout << "5-Para Listar funcionarios contratados em menos de 90 dias" << endl;
+    cout << "6-Para listar a média de funcionários por empresa" << endl;
+    cin >> num;
+
+       	switch(num){
+            case 1: emp.EntradadadosEmpresa();
+            		emp.SaidadadosEmpresa();
+              break;
+            case 2: int qntfunc;
+					cout << "Quantos funcionarios serao cadastrados?" << endl;
+					cin >> qntfunc;
+            		func.Entradadadosfuncionais(qntfunc);
+            		func.Saidadadosfuncionais(qntfunc);
+              break;
+            case 3:
+            	break;
+            case 4:
+            	break;
+            case 5:
+            	break;
+            case 6:
+            	break;
+        }                
+
+
+
+
+/*
     cout << "Cadastre o nome da empresa" << endl;
 
     string nomeemp;
@@ -40,7 +75,7 @@ vector<Funcionario> func(quantfunc);
 
 
 
-
+*/
     	
     return 0;
 }
